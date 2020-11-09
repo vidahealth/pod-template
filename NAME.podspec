@@ -13,11 +13,11 @@ TODO: Add long description of the pod here.
 
   s.ios.deployment_target = '12.0'
 
-  s.source_files = '${POD_NAME}/Classes/**/*'
+  s.source_files = '${POD_NAME}/${POD_NAME}/Classes/**/*'
   # s.resources = "ContentFramework/Content/Assets/*.xcassets"
 
   s.test_spec 'Tests' do |test_spec|
-    test_spec.source_files = '${POD_NAME}/Tests/**/*.swift'
+    test_spec.source_files = '${POD_NAME}/${POD_NAME}/Tests/**/*.swift'
   end
 
   s.dependency 'VidaUIKit'

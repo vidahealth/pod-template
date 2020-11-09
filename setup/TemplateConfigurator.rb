@@ -156,6 +156,7 @@ module Pod
     def rename_template_files
       FileUtils.mv "POD_README.md", "README.md"
       FileUtils.mv "NAME.podspec", "#{pod_name}.podspec"
+      FileUtils.mv "#{pod_name}.podspec", ".."
     end
 
     def rename_classes_folder
