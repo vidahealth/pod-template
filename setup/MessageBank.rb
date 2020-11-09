@@ -34,37 +34,13 @@ module Pod
         run_setup_questions
       end
 
-      puts "\n------------------------------"
-      puts ""
-      puts "To get you started we need to ask a few questions, this should only take a minute."
-      puts ""
-
-      has_run_before = `defaults read org.cocoapods.pod-template HasRunBefore`.chomp == "1"
-
-      puts "If this is your first time we recommend running through with the guide: "
-      puts " - "  + "https://guides.cocoapods.org/making/using-pod-lib-create.html".blue.underlined
-
-      if ENV["TERM_PROGRAM"] == "iTerm.app"
-        puts " ( hold cmd and click links to open in a browser. )".magenta
-      else
-        puts " ( hold cmd and double click links to open in a browser. )".magenta
-      end
-
-      unless has_run_before
-        puts "\n Press return to continue."
-        `defaults write org.cocoapods.pod-template HasRunBefore -bool true`
-      end
-
-      puts ""
+      puts "Hey there! Setting up your Pod"
     end
 
     def farewell_message
       puts ""
 
-      puts " Ace! you're ready to go!"
-      puts " We will start you off by opening your project in Xcode"
-      pod_name = @configurator.pod_name
-      run_command "open 'Example/#{pod_name}.xcworkspace'", "open '#{pod_name}/Example/#{pod_name}.xcworkspace'"
+      puts "Done!"
     end
 
 
