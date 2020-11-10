@@ -11,6 +11,7 @@ target '${POD_NAME}_Example' do
   pod 'VidaCore', :path => '../../'
   pod 'VidaLogger', :path => '../../'
   pod 'VidaTranslation', :path => '../../'
-  pod 'MidTierOperations', :git => 'https://827f6b1c433068d93d2a052e4b4cd12f693191e2@github.com/vidahealth/mid_tier.git', :commit => COMMIT_HASHES[:operations]
-  pod 'Contexts', :git => 'https://827f6b1c433068d93d2a052e4b4cd12f693191e2@github.com/vidahealth/js-eventTracker.git', :commit => COMMIT_HASHES[:contexts]
+  pod 'MidTierOperations', :git => 'ssh://git@github.com/vidahealth/mid_tier.git', :commit => COMMIT_HASHES[:operations]
+  pod 'Contexts', :git => 'ssh://git@github.com/vidahealth/js-eventTracker.git', :commit => COMMIT_HASHES[:contexts]
 end
+
