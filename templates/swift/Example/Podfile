@@ -4,7 +4,7 @@ platform :ios, '12.0'
 target '${POD_NAME}_Example' do
   require_relative '../../pod_constants'
 
-  pod '${POD_NAME}', :path => '../../'
+  pod '${POD_NAME}', :path => '../../', :testspecs => ["Tests"]
 
   pod 'VidaUIKit', :path => '../../'
   pod 'constrain', :git => 'https://github.com/gsbernstein/constrain.git', :commit => COMMIT_HASHES[:constrain]
